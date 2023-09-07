@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --shade1: #ffffff;
+  --shade2: #b3b3b3;
+  --shade3: #3b3b3b;
+  --shade4: #121212;
+  --accent1: #9b5cff;
+  --accent2: #ffd84d;
+  --accent3: #5ee2ff;
+  --gradient-01: linear-gradient(
+    90deg,
+    #ffe074 0.85%,
+    #50cae4 52.93%,
+    #9b5cff 100.85%
+  );
+}

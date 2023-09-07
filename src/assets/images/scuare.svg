@@ -1,0 +1,14 @@
+<svg width="60" height="59" viewBox="0 0 60 59" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g id="scuare">
+<rect id="graphic" x="0.5" width="59" height="59" rx="8" fill="url(#paint0_angular_7_446)"/>
+<g id="graphic_2" style="mix-blend-mode:overlay">
+<rect x="0.5" width="59" height="59" rx="8" fill="#9B5CFF"/>
+</g>
+</g>
+<defs>
+<radialGradient id="paint0_angular_7_446" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(30 29.5) rotate(90) scale(29.5)">
+<stop stop-color="#969696"/>
+<stop offset="1" stop-color="#282828"/>
+</radialGradient>
+</defs>
+</svg>
