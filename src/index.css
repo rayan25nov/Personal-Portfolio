@@ -1,21 +1,8 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
 }
 
-:root {
-  --shade1: #ffffff;
-  --shade2: #b3b3b3;
-  --shade3: #3b3b3b;
-  --shade4: #121212;
-  --accent1: #9b5cff;
-  --accent2: #ffd84d;
-  --accent3: #5ee2ff;
-  --gradient-01: linear-gradient(
-    90deg,
-    #ffe074 0.85%,
-    #50cae4 52.93%,
-    #9b5cff 100.85%
-  );
-}

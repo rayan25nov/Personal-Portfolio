@@ -1,0 +1,92 @@
+@import "../App.module.css";
+/* Dark theme variables */
+
+.dark {
+  --container-background: var(--dark-background-color);
+  --img-filter: var(--dark-img-filter);
+  --text-color: var(--dark-text-color);
+  --accent-color: var(--dark-accent-color);
+  --border-color: var(--dark-border-color);
+}
+
+/* Light theme variables */
+
+.light {
+  --container-background: var(--light-background-color);
+  --img-filter: var(--light-img-filter);
+  --text-color: var(--light-text-color);
+  --accent-color: var(--light-accent-color);
+  --border-color: var(--light-border-color);
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--container-background);
+  min-height: 6rem;
+  padding: 1rem;
+  flex: 1 0 0;
+}
+.link_container {
+  display: flex;
+  margin: 0 1.5rem;
+}
+.container a {
+  margin: 0 0.75rem;
+  text-decoration: none;
+  color: var(--text-color);
+  font-size: 1.25rem;
+  align-content: center;
+  font-style: normal;
+  padding: 0.45rem 0.875rem;
+  font-weight: 400;
+  line-height: 1.5rem; /* 150% */
+}
+
+.container a:hover {
+  background-color: var(--border-color);
+  border-radius: 0.5rem;
+  border: 1px solid #b3b3b3;
+  box-shadow: 1px 1px 1px 0.5px #b3b3b3;
+}
+
+.container a.activeLink {
+  background-color: var(--border-color);
+  border-radius: 0.5rem;
+  border: 1px solid #b3b3b3;
+  box-shadow: #fff;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+}
+
+.logo img {
+  width: 4.5rem;
+  height: auto;
+}
+.divider {
+  font-size: 2.5rem;
+  font-weight: 300;
+  color: #f0f0f0;
+}
+.mode {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 0.55rem;
+  margin-left: 0.5rem;
+  width: 2rem;
+  height: 2rem;
+  background-color: #f0f0f0;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+.mode img {
+  max-width: 100%;
+  height: auto;
+  /* background-color: var(--container-background); */
+}

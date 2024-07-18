@@ -1,3 +1,41 @@
-.wrapper {
-  background: #121212;
+/* Root CSS variables */
+
+:root {
+  /* Dark theme variables */
+
+  --dark-background-color: #080c1c;
+  --dark-text-color: #ffffff;
+  --dark-border-color: #424242;
+  --dark-img-filter: invert(0);
+
+  /* Light theme variables */
+  --light-background-color: #f0f0f0;
+  --light-text-color: #3b3b3b;
+  --light-border-color: #cccccc;
+  --light-img-filter: invert(100);
+
+  /* Extra variables */
+  --accent1: #9b5cff;
+  --accent2: #ffd84d;
+  --accent3: #5ee2ff;
+  --gradient-01: linear-gradient(
+    90deg,
+    #ffe074 0.85%,
+    #50cae4 52.93%,
+    #9b5cff 100.85%
+  );
+}
+.container {
+  transition: background-color 0.3s ease;
+}
+/* Dark theme variables */
+
+.dark {
+  background-color: var(--dark-background-color);
+}
+
+/* Light theme variables */
+
+.light {
+  background-color: var(--light-background-color);
 }
