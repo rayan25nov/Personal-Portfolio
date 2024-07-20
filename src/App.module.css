@@ -7,17 +7,20 @@
   --dark-text-color: #ffffff;
   --dark-border-color: #424242;
   --dark-img-filter: invert(0);
-
-  /* Light theme variables */
-  --light-background-color: #f0f0f0;
-  --light-text-color: #3b3b3b;
-  --light-border-color: #cccccc;
-  --light-img-filter: invert(100);
-
-  /* Extra variables */
-  --accent1: #9b5cff;
-  --accent2: #ffd84d;
-  --accent3: #5ee2ff;
+   --dark-scrollbar-color: #333333;
+   
+   /* Light theme variables */
+   --light-background-color: #f0f0f0;
+   --light-text-color: #3b3b3b;
+   --light-border-color: #cccccc;
+   --light-img-filter: invert(100);
+   --light-scrollbar-color: #dddddd;
+   
+   /* Extra variables */
+   --accent1: #9b5cff;
+   --accent2: #ffd84d;
+   --accent3: #5ee2ff;
+  --accent4: #007bff;
   --gradient-01: linear-gradient(
     90deg,
     #ffe074 0.85%,
@@ -26,7 +29,7 @@
   );
 }
 .container {
-  transition: background-color 0.3s ease;
+  transition: background-color 0.3s ease-in-out;
 }
 /* Dark theme variables */
 

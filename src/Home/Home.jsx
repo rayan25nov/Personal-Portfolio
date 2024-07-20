@@ -9,6 +9,7 @@ const Home = () => {
     <div
       className={`${Styles.container} ${darkMode ? Styles.dark : Styles.light}`}
     >
+      
       <div className={Styles.right}>
         <div className={Styles.profile}>
           <img src="./assets/profile.png" alt="Profile" />
@@ -31,7 +32,7 @@ const Home = () => {
         </div>
         <div className={Styles.social}>
           <a href="https://github.com/rayan25nov" target="_blank">
-            <img src="./assets/github.png" alt="github" />
+            <img src="./assets/github2.png" alt="github" />
           </a>
           <a
             href="https://www.linkedin.com/in/rayan-ahmad-25nov/"

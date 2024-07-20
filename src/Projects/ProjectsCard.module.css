@@ -1,0 +1,152 @@
+@import "../App.module.css";
+
+/* Dark theme variables */
+.dark {
+  --container-background: var(--dark-background-color);
+  --text-color: var(--dark-text-color);
+  --accent-color: var(--accent3);
+  --border-color: var(--dark-border-color);
+}
+
+/* Light theme variables */
+.light {
+  --container-background: var(--light-background-color);
+  --text-color: var(--light-text-color);
+  --accent-color: var(--accent4);
+  --border-color: var(--light-border-color);
+}
+
+/* Container styles */
+.card {
+  background: var(--container-background);
+  border-radius: 0.5rem;
+  overflow: hidden;
+  max-width: 100%;
+  height: auto;
+  margin: 10px;
+  box-shadow: 0 4px 12px var(--border-color);
+  transition: box-shadow 0.3s, transform 0.3s;
+}
+
+
+/* Video container styles */
+.cardVideo {
+  width: 100%;
+  height: 0;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  position: relative;
+  background: var(--border-color);
+}
+
+.cardVideo iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: none;
+  border-radius: 0.5rem 0.5rem 0 0;
+}
+
+/* Content styles */
+.cardContent {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.name {
+  font-size: 1.75rem;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: var(--text-color);
+  transition: color 0.3s;
+}
+
+.card:hover .name {
+  color: var(--accent-color);
+}
+
+p {
+  font-size: 1rem;
+  font-weight: 500;
+  margin: 10px 0 5px;
+  color: var(--text-color);
+}
+
+ul {
+  padding-left: 20px;
+  margin: 0;
+  list-style-type: disc;
+}
+
+li {
+  font-size: 0.95rem;
+  color: var(--text-color);
+  margin-bottom: 5px;
+}
+.link_container {
+  display: flex;
+  justify-content: space-evenly;
+}
+a {
+  display: inline-block;
+  margin-top: 10px;
+  padding: 5px 8px;
+  font-size: 1rem;
+  color: var(--accent-color);
+  text-decoration: none;
+  border: 1px solid var(--accent-color);
+  border-radius: 0.25rem;
+  transition: background-color 0.3s, color 0.3s, border-color 0.3s;
+}
+
+a:hover {
+  background-color: var(--accent-color);
+  color: var(--container-background);
+  border-color: var(--accent-color);
+}
+
+/* Responsive styles */
+@media (max-width: 1200px) {
+  .card {
+    margin: 20px auto;
+  }
+
+  .name {
+    font-size: 1.5rem;
+  }
+
+  li {
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .card {
+    margin: 20px auto;
+  }
+
+  .name {
+    font-size: 1.25rem;
+  }
+
+  li {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .card {
+    margin: 10px auto;
+  }
+
+  .name {
+    font-size: 1rem;
+  }
+
+  li {
+    font-size: 0.8rem;
+  }
+}

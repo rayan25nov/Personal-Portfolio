@@ -1,28 +1,48 @@
-/* About.module.css */
+@import "../App.module.css";
 
-.container {
+/* Dark theme variables */
+.dark {
+  --container-background: var(--dark-background-color);
+  --img-filter: var(--light-img-filter);
+  --text-color: var(--dark-text-color);
+  --accent-color: var(--dark-accent-color);
+  --border-color: var(--dark-border-color);
+}
+
+/* Light theme variables */
+.light {
+  --container-background: var(--light-background-color);
+  --img-filter: var(--dark-img-filter);
+  --text-color: var(--light-text-color);
+  --accent-color: var(--light-accent-color);
+  --border-color: var(--light-border-color);
+}
+
+/* About.module.css */
+.about_container {
   display: flex;
-  flex-direction: column;
+  justify-content: space-between;
   align-items: center;
   margin: 2rem auto;
   padding: 1rem;
-  background-color: #ffffff;
+  background-color: var(--container-background);
+  transition: background-color 0.3s ease-in-out;
 }
 
-button {
-  background-color: #007bff;
-  color: #ffffff;
+.about {
+  display: flex;
+  justify-content: center;
+}
+
+.about button {
+  background-color: var(--accent-color);
+  color: var(--text-color);
   padding: 0.5rem 1rem;
-  border: none;
+  border: 1px solid var(--border-color);
   border-radius: 0.25rem;
   font-size: 1rem;
   cursor: pointer;
-  transition: background-color 0.3s;
   margin-bottom: 1rem;
-}
-
-button:hover {
-  background-color: #0056b3;
 }
 
 .left {
@@ -33,36 +53,85 @@ button:hover {
   position: relative;
 }
 
+.profile {
+  background-color: var(--container-background);
+  position: relative;
+  border-left: 1.25rem solid #cbc9c9; /* 8px */
+  border-bottom: 1.25rem solid #cbc9c9;
+}
+
 .profile img {
   max-width: 20rem;
   height: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   position: relative;
+  transform: translateX(0.75rem) translateY(-0.5rem);
 }
 
-.profile::after {
+/* .profile::after {
   content: "";
   position: absolute;
-  left: -30px;
+  left: 45px;
   bottom: -25px;
   width: 18rem;
   height: 24rem;
-  border-left: 1rem solid #cbc9c9;
-  border-bottom: 1rem solid #cbc9c9;
-}
+  border-left: 1rem solid var(--border-color);
+  border-bottom: 1rem solid var(--border-color);
+} */
 
 .right {
   flex: 2;
   padding: 2rem;
 }
+
 .right h2 {
-  font-size: 1.5rem;
-  margin-bottom: 1rem;
-  color: #333333;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  display: flex;
+  justify-content: center;
+  color: var(--text-color);
 }
 
 .right p {
-  font-size: 1rem;
+  font-size: 1.25rem;
   line-height: 1.6;
-  color: #555555;
+  color: var(--text-color);
+}
+
+/* Media Queries */
+@media (max-width: 1024px) {
+  .about_container {
+    flex-direction: column;
+    padding: 1rem;
+  }
+
+  .left,
+  .right {
+    flex: none;
+    width: 100%;
+  }
+  .profile {
+    max-width: 90%;
+    border-left: 1rem solid #cbc9c9;
+    border-right: 1rem solid #cbc9c9;
+    border-bottom: 1rem solid #cbc9c9;
+  }
+  .profile img {
+    transform: translateX(0rem) translateY(-0.5rem);
+    padding: 0 0.5rem;
+  }
+
+  .right h2 {
+    font-size: 1.75rem;
+  }
+
+  .right p {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 468px) {
+  .profile img {
+    max-width: 15rem;
+    height: auto;
+  }
 }

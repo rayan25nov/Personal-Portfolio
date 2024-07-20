@@ -1,6 +1,6 @@
 @import "../App.module.css";
-/* Dark theme variables */
 
+/* Dark theme variables */
 .dark {
   --container-background: var(--dark-background-color);
   --img-filter: var(--light-img-filter);
@@ -10,7 +10,6 @@
 }
 
 /* Light theme variables */
-
 .light {
   --container-background: var(--light-background-color);
   --img-filter: var(--dark-img-filter);
@@ -26,7 +25,7 @@
   justify-content: space-between;
   align-items: center;
   min-height: 100%;
-  padding: 2.5rem;
+  padding: 2.5rem; /* 40px */
   background-color: var(--container-background);
 }
 
@@ -38,37 +37,32 @@
   position: relative;
 }
 
-.profile img {
-  max-width: 18rem;
-  height: auto;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+.profile {
   position: relative;
+  border-right: 1.25rem solid #cbc9c9; /* 8px */
+  border-bottom: 1.25rem solid #cbc9c9;
 }
 
-.profile::after {
-  content: "";
-  position: absolute;
-  right: 55px;
-  bottom: -30px;
-  width: 17rem;
-  height: 17rem;
-  border-right: 25px solid #cbc9c9;
-  border-bottom: 25px solid #cbc9c9;
+.profile img {
+  background-color: var(--container-background);
+  max-width: 18rem;
+  height: auto;
+  transform: translateX(-0.75rem) translateY(-0.5rem);
 }
 
 .left {
   flex: 2;
-  padding: 2rem;
+  padding: 2rem; /* 32px */
 }
 
 .heading {
-  font-size: 3rem;
-  margin-bottom: 1rem;
+  font-size: 3rem; /* 48px */
+  margin-bottom: 1rem; /* 16px */
   color: var(--text-color);
 }
 
 .description h3 {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* 24px */
   line-height: 1.6;
   color: var(--text-color);
 }
@@ -76,28 +70,28 @@
 .location {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  padding: 1rem;
+  gap: 1rem; /* 16px */
+  padding: 1rem; /* 16px */
   cursor: pointer;
 }
 
 .location img {
-  width: 2rem;
+  width: 2rem; /* 32px */
   height: auto;
   filter: var(--img-filter);
 }
 
 .location p {
   margin: 0;
-  font-size: 1rem;
+  font-size: 1rem; /* 16px */
   color: var(--text-color);
   font-family: "Roboto", sans-serif;
 }
 
 .social {
   display: flex;
-  gap: 1.5rem;
-  padding: 1rem;
+  gap: 1.5rem; /* 24px */
+  padding: 1rem; /* 16px */
 }
 
 .social a {
@@ -106,11 +100,111 @@
 }
 
 .social img {
-  width: 2rem;
+  width: 2rem; /* 32px */
   height: auto;
   filter: var(--img-filter);
 }
 
 .social a:hover {
-  transform: translateY(-2px);
+  transform: translateY(-0.125rem); /* -2px */
+}
+
+/* Media Queries */
+
+/* Medium Screens (between 768px and 1024px) */
+@media (max-width: 64rem) and (min-width: 48rem) {
+  /* 1024px and 768px */
+  .container {
+    flex-direction: column;
+    padding: 1.5rem; /* 24px */
+  }
+
+  .right,
+  .left {
+    flex: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile {
+    position: relative;
+    border-right: 1rem solid #cbc9c9; /* 8px */
+    border-bottom: 1rem solid #cbc9c9;
+    border-left: 1rem solid #cbc9c9;
+    padding: 0 0.5rem;
+  }
+
+  .profile img {
+    transform: translateX(0rem) translateY(-0.5rem);
+  }
+
+  .heading {
+    font-size: 2.5rem; /* 40px */
+  }
+
+  .description h3 {
+    font-size: 1.25rem; /* 20px */
+  }
+
+  .location {
+    flex-direction: column;
+  }
+
+  .social {
+    justify-content: center;
+  }
+
+  .social img {
+    width: 1.5rem; /* 24px */
+  }
+}
+
+/* Small Screens (less than 768px) */
+@media (max-width: 48rem) {
+  /* 768px */
+  .container {
+    flex-direction: column;
+    padding: 1rem; /* 16px */
+  }
+
+  .right,
+  .left {
+    flex: none;
+    width: 100%;
+    text-align: center;
+  }
+
+  .profile {
+    position: relative;
+    border-right: 1rem solid #cbc9c9; /* 8px */
+    border-bottom: 1rem solid #cbc9c9;
+    border-left: 1rem solid #cbc9c9;
+    padding: 0 0.5rem;
+  }
+
+  .profile img {
+    max-width: 12rem; /* 192px */
+    transform: translateX(0rem) translateY(-0.5rem);
+  }
+
+  .heading {
+    font-size: 2rem; /* 32px */
+  }
+
+  .description h3 {
+    font-size: 1rem; /* 16px */
+  }
+
+  .location {
+    flex-direction: column;
+  }
+
+  .social {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .social img {
+    width: 1.25rem; /* 20px */
+  }
 }

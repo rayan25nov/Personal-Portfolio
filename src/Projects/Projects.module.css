@@ -1,0 +1,60 @@
+/* Add these to Projects.module.css */
+
+/* Dark theme variables */
+.dark {
+  --text-color: var(--dark-text-color);
+  --pagination-bullet-color: #fff;
+  --pagination-bullet-active-color: #e62e00;
+}
+
+/* Light theme variables */
+.light {
+  --text-color: var(--light-text-color);
+  --pagination-bullet-color: #e62e00;
+  --pagination-bullet-active-color: #0073e6;
+}
+
+/* Container styles */
+.container {
+  padding: 3rem 1.25rem;
+}
+
+/* Header styles */
+.header {
+  font-size: 2.5rem;
+  text-align: center;
+  margin-bottom: 30px;
+  color: var(--text-color);
+}
+
+/* Project container styles */
+.project_container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding-bottom: 2.5rem;
+}
+
+/* Swiper styles */
+.mySwiper {
+  width: 100%;
+  max-width: 1400px;
+  position: relative;
+}
+
+/* Pagination bullets */
+:global(.swiper-pagination-bullet) {
+  background: var(--pagination-bullet-color) !important;
+  opacity: 1;
+}
+
+:global(.swiper-pagination-bullet-active) {
+  background: var(--pagination-bullet-active-color) !important;
+}
+
+.cardWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

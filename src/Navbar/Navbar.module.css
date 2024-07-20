@@ -1,38 +1,42 @@
-@import "../App.module.css";
-/* Dark theme variables */
-
-.dark {
-  --container-background: var(--dark-background-color);
-  --img-filter: var(--dark-img-filter);
-  --text-color: var(--dark-text-color);
-  --accent-color: var(--dark-accent-color);
-  --border-color: var(--dark-border-color);
-}
-
-/* Light theme variables */
-
-.light {
-  --container-background: var(--light-background-color);
-  --img-filter: var(--light-img-filter);
-  --text-color: var(--light-text-color);
-  --accent-color: var(--light-accent-color);
-  --border-color: var(--light-border-color);
-}
-
+/* General Styles */
 .container {
+  position: sticky;
+  top: 0;
+  left: 0;
+  z-index: 100;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: var(--container-background);
   min-height: 6rem;
   padding: 1rem;
-  flex: 1 0 0;
+  box-shadow: 0 2px 6px var(--border-color);
+  background-color: var(--container-background);
+  transition: background-color 0.3s ease-in-out;
 }
+
 .link_container {
   display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0 1.5rem;
+  transition: right 0.5s ease-in-out;
 }
+
+.link_container.open {
+  flex-direction: column;
+  position: fixed;
+  top: 6rem;
+  right: 0;
+  width: 100%;
+  background-color: var(--container-background);
+  transition: background-color 0.3s ease-in-out;
+  padding: 1rem;
+  box-shadow: 0 2px 6px var(--border-color);
+  z-index: 99;
+}
+
 .container a {
+  width: fit-content;
   margin: 0 0.75rem;
   text-decoration: none;
   color: var(--text-color);
@@ -41,7 +45,7 @@
   font-style: normal;
   padding: 0.45rem 0.875rem;
   font-weight: 400;
-  line-height: 1.5rem; /* 150% */
+  line-height: 1.5rem;
 }
 
 .container a:hover {
@@ -55,7 +59,6 @@
   background-color: var(--border-color);
   border-radius: 0.5rem;
   border: 1px solid #b3b3b3;
-  box-shadow: #fff;
 }
 
 .logo {
@@ -67,11 +70,13 @@
   width: 4.5rem;
   height: auto;
 }
+
 .divider {
   font-size: 2.5rem;
   font-weight: 300;
-  color: #f0f0f0;
+  color: var(--text-color);
 }
+
 .mode {
   display: flex;
   align-items: center;
@@ -88,5 +93,90 @@
 .mode img {
   max-width: 100%;
   height: auto;
-  /* background-color: var(--container-background); */
+}
+
+.smallScreen {
+  display: none;
+}
+/* .mobileMode {
+  display: none;
+}
+.mobileView {
+  display: none;
+  cursor: pointer;
+} */
+
+/* Media Queries */
+@media screen and (max-width: 1024px) {
+  .link_container {
+    position: fixed;
+    top: 6rem;
+    right: -200%;
+    width: 100%;
+    background-color: var(--container-background);
+    text-align: center;
+    padding: 1.5rem;
+    box-shadow: 0 2px 6px var(--border-color);
+    flex-direction: column;
+  }
+
+  .link_container.open {
+    right: -5%;
+  }
+  .mode {
+    display: none;
+  }
+  .mobileMode {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-left: 0.5rem;
+    max-width: 2rem;
+    max-height: 2rem;
+    background-color: #f0f0f0;
+    border-radius: 50%;
+    cursor: pointer;
+  }
+
+  .mobileMode img {
+    max-width: 2rem;
+    height: auto;
+  }
+
+  .mobileView img {
+    max-width: 2rem;
+    filter: var(--img-filter);
+  }
+  .mobileView {
+    display: block;
+  }
+  .divider {
+    display: none;
+  }
+
+  .smallScreen {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2.5rem;
+    justify-content: space-between;
+  }
+}
+
+/* Dark theme variables */
+.dark {
+  --container-background: var(--dark-background-color);
+  --img-filter: invert(1); /* Invert colors for dark mode */
+  --text-color: var(--dark-text-color);
+  --accent-color: var(--dark-accent-color);
+  --border-color: var(--dark-border-color);
+}
+
+/* Light theme variables */
+.light {
+  --container-background: var(--light-background-color);
+  --img-filter: invert(0); /* No inversion for light mode */
+  --text-color: var(--light-text-color);
+  --accent-color: var(--light-accent-color);
+  --border-color: var(--light-border-color);
 }
