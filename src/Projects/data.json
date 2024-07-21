@@ -11,40 +11,135 @@
     "live": "https://blog-application-rho.vercel.app/login"
   },
   {
+    "videoId": "LmuKcB2aQ5Q",
+    "name": "Restaurant Management",
+    "features": [
+      "User Authentication & Authorization",
+      "Food Management, Inventory Management, Order Management",
+      "Responsive Design"
+    ],
+    "code": "https://github.com/rayan25nov/restaurant-client",
+    "live": "https://restaurant-client-sigma.vercel.app/"
+  },
+  {
+    "videoId": "r3O9dRxxoN8",
+    "name": "Url Shortener",
+    "features": [
+      "Shorten Long Url",
+      "Dark Mode and Responsive Design",
+      "Generate Short Codes for Long URLs, Redirecting Users to the Original URL"
+    ],
+    "code": "https://github.com/rayan25nov/Url-Shortener",
+    "live": "https://url-shortener-ten-sigma.vercel.app/"
+  },
+  {
+    "videoId": "6hFJTxD1omE",
+    "name": "Weather Application",
+    "features": [
+      "Shows Weather of Different Locations",
+      "Dark Mode and Responsive Design",
+      "Uses Current Location to Fetch Weather Related Data"
+    ],
+    "code": "https://github.com/rayan25nov/Weather-Application",
+    "live": "https://weather-application-vert-alpha.vercel.app/"
+  },
+  {
+    "videoId": "j2wdXLsXsio",
+    "name": "Personal Portfolio",
+    "features": [
+      "Showcasing My Qualifications and Projects",
+      "Responsive Design",
+      "Downloadable Resume"
+    ],
+    "code": "https://github.com/rayan25nov/Portfolio",
+    "live": "https://portfolio-rayan25nov.vercel.app/"
+  },
+  {
     "videoId": "Fs3N9TvOYoY",
-    "name": "Notes App"
+    "name": "Notes App",
+    "features": [
+      "Allows Users to Create Notes",
+      "Responsive Design",
+      "Specify the Type of Notes"
+    ],
+    "code": "https://github.com/rayan25nov/Create-Notes",
+    "live": "https://create-notes.vercel.app/"
   },
   {
     "videoId": "kn4J1io85fo",
-    "name": "Dictionary App"
+    "name": "Dictionary App",
+    "features": [
+      "Search Words and Their Meanings",
+      "Responsive Design with Dark Mode",
+      "Pronunciation of Words"
+    ],
+    "code": "https://github.com/rayan25nov/Dictionary-App",
+    "live": "https://dictionary-app-jmku.vercel.app/"
   },
   {
     "videoId": "lHm2LmQqO_4",
-    "name": "My Sample Page"
+    "name": "My Sample Page",
+    "features": [
+      "Showcasing My Practice in HTML, CSS, and JavaScript",
+      "Responsive Design",
+      "Material UI Integration"
+    ],
+    "code": "https://github.com/rayan25nov/My-First-Project",
+    "live": "https://my-first-project-steel.vercel.app/"
   },
   {
     "videoId": "pEoycitCjls",
-    "name": "Expanding Cards"
+    "name": "Expanding Cards",
+    "features": [
+      "Showcase Different Cards that Expand on Click",
+      "Responsive Design",
+      "Smooth Transition Effects"
+    ],
+    "code": "https://github.com/rayan25nov/Expanding-Cards",
+    "live": "https://expanding-cards-azure.vercel.app/"
   },
   {
     "videoId": "J8w_61fV1-g",
-    "name": "Movie Overview App"
+    "name": "Movie Overview App",
+    "features": [
+      "Shows Movie Details and Ratings",
+      "Responsive Design",
+      "Search and Filter Movies"
+    ],
+    "code": "https://github.com/rayan25nov/Movie-Overview-App",
+    "live": "https://movie-overview-app.vercel.app/"
   },
   {
     "videoId": "r0WCfe_4cFU",
-    "name": "Calculator"
+    "name": "Calculator",
+    "features": [
+      "Basic Mathematical Calculations",
+      "Responsive Design",
+      "Dark Mode"
+    ],
+    "code": "https://github.com/rayan25nov/Calculator-App",
+    "live": "https://calculator-app.vercel.app/"
   },
   {
     "videoId": "pFTpo_mNbeQ",
-    "name": "Library Management"
+    "name": "Library Management",
+    "features": [
+      "Manage Books and Members",
+      "Responsive Design",
+      "Issue and Return Books"
+    ],
+    "code": "https://github.com/rayan25nov/library-management-system",
+    "live": "https://library-management-system-gules.vercel.app/"
   },
   {
-    "videoId": "LmuKcB2aQ5Q",
-    "name": "Restaurant Management System"
-  }
-  ,
-  {
-    "videoId": "r3O9dRxxoN8",
-    "name": "Url Shortener"
+    "videoId": "a-gt2Q6pd60",
+    "name": "To do App",
+    "features": [
+      "Create and Manage Tasks",
+      "Responsive Design",
+      "Set Deadlines and Priorities"
+    ],
+    "code": "https://github.com/rayan25nov/To-do-App",
+    "live": "https://to-do-app-vgoo.vercel.app/"
   }
 ]

@@ -9,7 +9,6 @@ const Home = () => {
     <div
       className={`${Styles.container} ${darkMode ? Styles.dark : Styles.light}`}
     >
-      
       <div className={Styles.right}>
         <div className={Styles.profile}>
           <img src="./assets/profile.png" alt="Profile" />
@@ -19,11 +18,11 @@ const Home = () => {
         <h1 className={Styles.heading}>Hi, I am Rayan 👋</h1>
         <div className={Styles.description}>
           <h3>
-            I'm a full stack developer (MERN Stack) with a focus on creating
-            (and occasionally designing) exceptional digital experiences that
-            are fast, accessible, visually appealing, and responsive. Even
-            though I have been creating web applications for over 3 years, I
-            still love it as if it was something new.
+            As a full stack developer specializing in the MERN Stack, I am
+            dedicated to crafting and occasionally designing exceptional digital
+            experiences that are fast, accessible, visually appealing, and
+            responsive. Despite having over 3 years of experience in developing
+            web applications, my passion for it remains as strong as ever.
           </h3>
         </div>
         <div className={Styles.location}>

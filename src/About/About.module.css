@@ -54,7 +54,6 @@
 }
 
 .profile {
-  background-color: var(--container-background);
   position: relative;
   border-left: 1.25rem solid #cbc9c9; /* 8px */
   border-bottom: 1.25rem solid #cbc9c9;

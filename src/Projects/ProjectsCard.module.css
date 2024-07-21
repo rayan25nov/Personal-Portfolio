@@ -22,12 +22,11 @@
   border-radius: 0.5rem;
   overflow: hidden;
   max-width: 100%;
-  height: auto;
+  min-height: 500px;
   margin: 10px;
   box-shadow: 0 4px 12px var(--border-color);
   transition: box-shadow 0.3s, transform 0.3s;
 }
-
 
 /* Video container styles */
 .cardVideo {
